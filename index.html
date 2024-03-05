@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputs">
+            <div class="input-box">
+                Full Name
+                <span id="name-input">
+                    <input type="text" placeholder="Enter Your Name" onkeyup="validateName()">
+                    <p class="validation"></p>
+                </span>
+
+            </div>
+            <div class="input-box">
+                Phone No.
+                <span id="phone-input">
+                    <input type="text" placeholder="Enter Your Phone No." onkeyup="validateNumber()">
+                    <p class="validationNo"></p>
+                </span>
+
+            </div>
+            <div class="input-box">
+                Email Id
+                <span id="email-input">
+                    <input type="email" placeholder="Enter Your email" onkeyup=" validateEmail()">
+                    <p class="validationemail"></p>
+                </span>
+
+            </div>
+            <div class="input-box">
+                Message
+                <span class="textarea" id="message-input">
+                    <textarea cols="30" rows="5" placeholder="Enter a Message" onkeyup="validateMessage()"></textarea>
+                    <p class="validationmessage"></p>
+                </span>
+
+            </div>
+        </div>
+        <label class="btn">
+            <button type="submit" onclick="return validateForm()">Submit</button>
+        </label>
+
+        <p class="submit-error"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

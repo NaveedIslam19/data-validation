@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.inputs .input-box {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input-box input {
+    height: 40px;
+    border: 0;
+    outline: 0;
+}
+
+.input-box textarea {
+    border: 0;
+    margin-left: 30px;
+    outline: 0;
+    width: 152px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box span {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(180, 180, 180);
+    margin-left: 20px;
+}
+
+.input-box span p {
+    color: red;
+    margin-left: 5px;
+}
+
+.input-box .textarea {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+button {
+    padding: 15px 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000080;
+    border: 0;
+    border-radius: 5px;
+}
+
+.validation {
+    width: 140px;
+    text-align: right;
+}
+
+.validationNo {
+    width: 140px;
+    text-align: right;
+}
+
+.validationemail {
+    width: 140px;
+    text-align: right;
+}
+
+.validationmessage {
+    width: 140px;
+    text-align: right;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-error {
+    color: red;
+    margin-top: 40px;
+    margin-left: 40px;
+}
